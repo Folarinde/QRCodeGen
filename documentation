@@ -1,0 +1,20 @@
+1. Get all QR CODES - GET request to '/api/qr/getAll'
+
+2. Add a product to the catalog - POST request to '/api/product/addProduct' with data {catalogId, productName, description, image, price, businessName, categoryName}
+
+3. Generate QR CODE for catalog - POST request to '/api/qr/generate' with data { type, name, catalogId }
+
+4. Create new user - POST request to '/api/user/signup' with data {
+   username,
+   password,
+   passwordConfirm,
+   firstname,
+   lastname,
+   mobile,
+   }
+
+5. Log in - POST request to '/api/user/login' with data { username, password }
+
+6. Get user session - GET request to '/api/user/session'
+
+7.

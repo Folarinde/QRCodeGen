@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generate</title>
+    <script src="./js/catalog.js" defer></script>
+  </head>
+  <body>
+    <!-- markup for creating collections -->
+
+    <div id="section"></div>
+
+    <form onsubmit="createCatalog(event)">
+      <input type="text" name="businessName" defaultvalue="" />
+      <input type="text" name="catalogName" />
+      <input type="text" name="productName" />
+      <input
+        type="file"
+        accept="image/png, image/jpeg, image/webp"
+        name="productImage"
+      />
+      <textarea name="description" cols="20" rows="5"></textarea>
+      <input type="number" name="price" />
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- markup for generating qr code
+    <button onclick="generateQRCode()">Generate your QR code</button>
+    <a href="http://localhost:5001/view-collections.html?user=123"
+      >go to view</a
+    > -->
+  </body>
+</html>
